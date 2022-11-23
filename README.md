@@ -14,3 +14,5 @@ Then, [install Zombienet](https://substrate.stackexchange.com/questions/4692/how
 ./zombienet-macos spawn milestone_1_config.toml -p native
 ```
 
+Once you make enough transfers on the sequester-parachain-template chain (5-6+), the sequester-parachain-template will send an XCM containing the collected transaction fees to the sequester-rococo parachain.
+
