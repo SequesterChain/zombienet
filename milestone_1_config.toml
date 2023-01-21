@@ -35,10 +35,7 @@ cumulus_based = true
   [parachains.collator]
   name = "parachain-1001-collator"
   command = "../sequester-rococo/target/release/parachain-template-node"
-
-    [[parachains.collator.env]]
-    name = "RUST_LOG"
-    value = "trace"
+  args = ["--log xcm=trace"]
 
 [[hrmp_channels]]
 sender = 1000
