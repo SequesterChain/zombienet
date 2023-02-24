@@ -16,3 +16,10 @@ Then, [install Zombienet](https://substrate.stackexchange.com/questions/4692/how
 
 Once you make enough transfers on the sequester-parachain-template chain (5-6+), the sequester-parachain-template will send an XCM containing the collected transaction fees to the sequester-rococo parachain.
 
+### Milestone 2: Transfer on Rococo
+
+We have enabled the functionality of sending tokens from one chain to another with different tokens on their chain. To complete the reserve-backed transfer using the donations pallet, you must first register the token from the sequester parachain template on the sequester rococo chain. This can be done with the following extrinsic:
+
+0x1f0201010100a50f0100010100d43593c715fdd31c61141abd04a99fd6822c8558854ccde39a5684e7a56da27d010400010100a10f000700e876481700000000
+
+You can then send transactions on the alternative chain implementing the donations pallet, which will deposit the reserve-backed transfer onto the rococo chain.
