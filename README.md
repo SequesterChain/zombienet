@@ -18,7 +18,15 @@ Once you make enough transfers on the sequester-parachain-template chain (5-6+),
 
 ### Milestone 2: Transfer on Rococo
 
-We have enabled the functionality of sending tokens from one chain to another with different tokens on their chain. To complete the reserve-backed transfer using the donations pallet, you must first register the token from the sequester parachain template on the sequester rococo chain. This can be done with the following extrinsic:
+We have enabled the functionality of sending tokens from one chain to another with different tokens on their chain.
+
+Do this by checking out the 2nd-milestone-02-24-23 release of [sequester-parachain-template](https://github.com/SequesterChain/sequester-parachain-template), [pallets/donations](https://github.com/SequesterChain/pallets), and [sequester-rococo](https://github.com/SequesterChain/sequester-rococo) in the SequesterChain repo. Then, [install Zombienet](https://substrate.stackexchange.com/questions/4692/how-do-i-spin-up-a-testnet-with-zombienet) and run your platform equivalent of:
+
+```
+./zombienet-macos spawn milestone_2_config.toml -p native
+```
+
+To complete the reserve-backed transfer using the donations pallet, you must first register the token from the sequester parachain template on the sequester rococo chain. This can be done with the following extrinsic:
 
 0x1f0201010100a50f0100010100d43593c715fdd31c61141abd04a99fd6822c8558854ccde39a5684e7a56da27d010400010100a10f000700e876481700000000
 
