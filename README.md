@@ -26,8 +26,8 @@ Do this by checking out the 2nd-milestone-02-24-23 release of [sequester-paracha
 ./zombienet-macos spawn milestone_2_config.toml -p native
 ```
 
-To complete the reserve-backed transfer using the donations pallet, you must first register the token from the sequester parachain template on the sequester rococo chain. This can be done with the following extrinsic:
+To complete the reserve-backed transfer using the donations pallet, you must first register the token from the sequester parachain template on the sequester rococo chain. You will need to update the sudo account on the rococo-chain to be an account you control and then submit the token registration extrinsic. This can be done with the following encoded extrinsic:
 
-0x1f0201010100a50f0100010100d43593c715fdd31c61141abd04a99fd6822c8558854ccde39a5684e7a56da27d010400010100a10f000700e876481700000000
+0x040022000c000000245365717565737465720c534551000000000000000000000000000000000101010100a10f00000000010000000000
 
 You can then send transactions on the alternative chain implementing the donations pallet, which will deposit the reserve-backed transfer onto the rococo chain.
